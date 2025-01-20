@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+</head>
+<body>
+<h1>Expense Tracker</h1>
+<form action="/add" method="post">
+    <label>
+        <input type="text" name="description" placeholder="Description" required>
+    </label>
+    <label>
+        <input type="number" name="amount" step="0.01" placeholder="Amount" required>
+    </label>
+    <label>
+        <input type="date" name="date" required>
+    </label>
+    <button type="submit">Add Expense</button>
+</form>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Description</th>
+        <th>Amount</th>
+        <th>Date</th>
+    </tr>
+    <tr th:each="expense : ${expenses}">
+        <td th:text="${expense.id}"></td>
+        <td th:text="${expense.description}"></td>
+        <td th:text="${expense.amount}"></td>
+        <td th:text="${expense.date}"></td>
+    </tr>
+</table>
+</body>
+</html>
