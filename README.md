@@ -27,32 +27,30 @@ Backend: Java Spring Boot
 Database: H2/MySQL (configurable based on environment)
 Tools: IntelliJ IDEA, Maven
 How to Run
-Clone the repository:
 
-bash
-Copy
-Edit
-git clone https://github.com/aamahi/expense-tracker/ 
-Navigate to the project directory:
+<b>Clone the repository:</b>
+```
+git clone https://github.com/aamahi/expense-tracker/
+```
 
-bash
-Copy
-Edit
-cd expense-tracker  
-Configure the database in the application.properties file.
+<b>Navigate to the project directory:</b>
+```
+cd expense-tracker
+```
 
-Build the project:
+Configure the database in the application. properties file.
 
-bash
-Copy
-Edit
-mvn clean install  
-Run the application:
+<b>Build the project:</b>
+```
+mvn clean install
+```
 
-bash
-Copy
-Edit
-mvn spring-boot:run  
-Access the application in your browser at http://localhost:8080.
+<b>Run the application:</b>
+
+```
+mvn spring-boot:run
+```
+
+Access the application in your browser at <b>http://localhost:8080</b>.
 
 
